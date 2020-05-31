@@ -1,0 +1,170 @@
+local CocoWelcomeAnimation = Instance.new("ScreenGui")
+local CocoAnimationFrame = Instance.new("Frame")
+local IntroFrame = Instance.new("ImageLabel")
+local IntroLogo = Instance.new("ImageLabel")
+local IntroRectangle = Instance.new("ImageLabel")
+local A1 = Instance.new("TextLabel")
+local A2 = Instance.new("TextLabel")
+local A3 = Instance.new("TextLabel")
+local A4 = Instance.new("TextLabel")
+local T1 = Instance.new("TextLabel")
+local T2 = Instance.new("TextLabel")
+
+CocoWelcomeAnimation.Name = "CocoWelcomeAnimation"
+CocoWelcomeAnimation.Parent = game.CoreGui
+
+CocoAnimationFrame.Name = "CocoAnimationFrame"
+CocoAnimationFrame.Parent = CocoWelcomeAnimation
+CocoAnimationFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+CocoAnimationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CocoAnimationFrame.BackgroundTransparency = 1.000
+CocoAnimationFrame.BorderSizePixel = 0
+CocoAnimationFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+CocoAnimationFrame.Size = UDim2.new(0, 456, 0, 125)
+
+IntroFrame.Name = "IntroFrame"
+IntroFrame.Parent = CocoAnimationFrame
+IntroFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+IntroFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IntroFrame.BackgroundTransparency = 1.000
+IntroFrame.ClipsDescendants = true
+IntroFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+IntroFrame.Image = "rbxassetid://3570695787"
+IntroFrame.ImageColor3 = Color3.fromRGB(43, 43, 43)
+IntroFrame.ScaleType = Enum.ScaleType.Slice
+IntroFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+
+IntroLogo.Name = "IntroLogo"
+IntroLogo.Parent = IntroFrame
+IntroLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+IntroLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IntroLogo.BackgroundTransparency = 1.000
+IntroLogo.BorderSizePixel = 0
+IntroLogo.Position = UDim2.new(0.5, 0, 1.5, 0)
+IntroLogo.Size = UDim2.new(1, 0, 1, 0)
+IntroLogo.Image = "http://www.roblox.com/asset/?id=5114647371"
+
+IntroRectangle.Name = "IntroRectangle"
+IntroRectangle.Parent = CocoAnimationFrame
+IntroRectangle.AnchorPoint = Vector2.new(0.5, 0.5)
+IntroRectangle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IntroRectangle.BackgroundTransparency = 1.000
+IntroRectangle.Position = UDim2.new(0.5, 0, 0.5, 0)
+IntroRectangle.Image = "rbxassetid://3570695787"
+IntroRectangle.ImageColor3 = Color3.fromRGB(43, 43, 43)
+IntroRectangle.ScaleType = Enum.ScaleType.Slice
+IntroRectangle.SliceCenter = Rect.new(100, 100, 100, 100)
+IntroRectangle.SliceScale = 0.120
+
+A1.Name = "A1"
+A1.Parent = CocoAnimationFrame
+A1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A1.BackgroundTransparency = 1.000
+A1.BorderSizePixel = 0
+A1.Position = UDim2.new(0.169, 0, 10, 0)
+A1.Size = UDim2.new(0, 75, 0, 75)
+A1.Font = Enum.Font.GothamBold
+A1.Text = "C"
+A1.TextColor3 = Color3.fromRGB(255, 255, 255)
+A1.TextSize = 100.000
+A1.TextWrapped = true
+
+A2.Name = "A2"
+A2.Parent = CocoAnimationFrame
+A2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A2.BackgroundTransparency = 1.000
+A2.BorderSizePixel = 0
+A2.Position = UDim2.new(0.333999991, 0, 10, 0)
+A2.Size = UDim2.new(0, 75, 0, 75)
+A2.Font = Enum.Font.GothamBold
+A2.Text = "O"
+A2.TextColor3 = Color3.fromRGB(255, 255, 255)
+A2.TextSize = 100.000
+A2.TextWrapped = true
+
+A3.Name = "A3"
+A3.Parent = CocoAnimationFrame
+A3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A3.BackgroundTransparency = 1.000
+A3.BorderSizePixel = 0
+A3.Position = UDim2.new(0.497999996, 0, 10, 0)
+A3.Size = UDim2.new(0, 75, 0, 75)
+A3.Font = Enum.Font.GothamBold
+A3.Text = "C"
+A3.TextColor3 = Color3.fromRGB(255, 255, 255)
+A3.TextSize = 100.000
+A3.TextWrapped = true
+
+A4.Name = "A4"
+A4.Parent = CocoAnimationFrame
+A4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A4.BackgroundTransparency = 1.000
+A4.BorderSizePixel = 0
+A4.Position = UDim2.new(0.662999988, 0, 10, 0)
+A4.Size = UDim2.new(0, 75, 0, 75)
+A4.Font = Enum.Font.GothamBold
+A4.Text = "O"
+A4.TextColor3 = Color3.fromRGB(255, 255, 255)
+A4.TextSize = 100.000
+A4.TextWrapped = true
+
+T1.Name = "T1"
+T1.Parent = CocoAnimationFrame
+T1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T1.BackgroundTransparency = 1.000
+T1.BorderSizePixel = 0
+T1.Position = UDim2.new(0, 0, 10, 0)
+T1.Size = UDim2.new(1, 0, 0.263999999, 0)
+T1.Font = Enum.Font.GothamBold
+T1.Text = "Welcome to Coco Z."
+T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextSize = 35.000
+T1.TextWrapped = true
+
+T2.Name = "T2"
+T2.Parent = CocoAnimationFrame
+T2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T2.BackgroundTransparency = 1.000
+T2.BorderSizePixel = 0
+T2.Position = UDim2.new(0, 0, 10, 0)
+T2.Size = UDim2.new(1, 0, 0.128000006, 0)
+T2.Font = Enum.Font.GothamBold
+T2.Text = "Using: Axon & Ringarang's Drawing Lib."
+T2.TextColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextSize = 20.000
+T2.TextWrapped = true
+
+local function XZTGLLW_fake_script() -- CocoAnimationFrame.AnimationScript 
+	local script = Instance.new('LocalScript', CocoAnimationFrame)
+
+	wait (2)
+	script.Parent.IntroFrame:TweenSize(UDim2.new(0,125,0,125), "Out", "Quad", 0.5, true)
+	wait (1)
+	script.Parent.IntroFrame.IntroLogo:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
+	wait (1)
+	script.Parent.IntroFrame.IntroLogo:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+	wait (0.5)
+	script.Parent.IntroRectangle:TweenSize(UDim2.new(1,0,1,0), "Out", "Quad", 0.5, true)
+	wait (0.3)
+	script.Parent.A1:TweenPosition(UDim2.new(0.169,0,0.2,0), "Out", "Quad", 1, true)
+	wait (0.3)
+	script.Parent.A2:TweenPosition(UDim2.new(0.334,0,0.2,0), "Out", "Quad", 1, true)
+	wait (0.3)
+	script.Parent.A3:TweenPosition(UDim2.new(0.498,0,0.2,0), "Out", "Quad", 1, true)
+	wait (0.3)
+	script.Parent.A4:TweenPosition(UDim2.new(0.663,0,0.2,0), "Out", "Quad", 1, true)
+	wait (1)
+	script.Parent.A1:TweenPosition(UDim2.new(0.169,0,-10,0), "Out", "Quad", 1, true)
+	script.Parent.A2:TweenPosition(UDim2.new(0.334,0,-10,0), "Out", "Quad", 1, true)
+	script.Parent.A3:TweenPosition(UDim2.new(0.498,0,-10,0), "Out", "Quad", 1, true)
+	script.Parent.A4:TweenPosition(UDim2.new(0.663,0,-10,0), "Out", "Quad", 1, true)
+	wait(0.5)
+	script.Parent.T1:TweenPosition(UDim2.new(0,0,0.304,0), "Out", "Quad", 1, true)
+	wait(0.3)
+	script.Parent.T2:TweenPosition(UDim2.new(0,0,0.568,0), "Out", "Quad", 1, true)
+	wait(1.5)
+	script.Parent.ClipsDescendants = true
+	script.Parent:TweenSize(UDim2.new(0,456,0,0), "Out", "Quad", 1, true)
+	
+end
+coroutine.wrap(XZTGLLW_fake_script)()
