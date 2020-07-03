@@ -109,7 +109,7 @@ local Credits = Instance.new("TextLabel")
 --Properties:
 
 CocoHub.Name = "CocoHub"
-CocoHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CocoHub.Parent = game.CoreGUI
 
 ButtonFrame.Name = "ButtonFrame"
 ButtonFrame.Parent = CocoHub
