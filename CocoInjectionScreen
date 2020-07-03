@@ -67,6 +67,7 @@ InjectionLabel.TextWrapped = true
 local function XPOIK_fake_script()
 	local script = Instance.new('LocalScript', CocoInjection)
 
+        wait(1)
 	script.Parent.InjectScreen:TweenSize(UDim2.new(0,150,0,150), "Out", "Quad", 0.5, true)
 	wait(0.5)
 	script.Parent.InjectScreen.Logo.ImageTransparency = 0.9
