@@ -1281,8 +1281,7 @@ CocoLogo.ImageTransparency = 1.000
 
 local function YGGDCTI_fake_script() -- CocoHub.NavigationFunction 
 	local script = Instance.new('Script', CocoHub)
-
-	wait(5)
+	
 	print ("Coco Hub by CocoCC & Friends has been loaded!")
 	script.Parent.IntroHubFrame.IntroFrame:TweenSize(UDim2.new(0,100,0,100), "Out", "Quad", 0.5, true)
 	script.Parent.IntroHubFrame.IntroFrame.CocoLogo.ImageTransparency = 1
