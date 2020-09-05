@@ -1,123 +1,146 @@
-local CocoInjection = Instance.new("ScreenGui")
-local InjectScreen = Instance.new("ImageLabel")
-local Logo = Instance.new("ImageLabel")
-local WebsiteLink = Instance.new("TextLabel")
-local InjectionLabel = Instance.new("TextLabel")
+--[[
+        _   _        _               _           _               _   _        _            _               _                  _           _     
+       /\_\/\_\ _   / /\            /\ \        /\ \            / /\/\ \     /\_\         /\ \     _   _  /\ \               /\ \        /\ \   
+      / / / / //\_\/ /  \          /  \ \____  /  \ \          / /  \ \ \   / / /        /  \ \   /\_\/\_\\ \ \             /  \ \       \ \ \  
+     /\ \/ \ \/ / / / /\ \        / /\ \_____\/ /\ \ \        / / /\ \ \ \_/ / /        / /\ \ \_/ / / / / \ \ \           / /\ \ \      /\ \_\ 
+    /  \____\__/ / / /\ \ \      / / /\/___  / / /\ \_\      / / /\ \ \ \___/ /        / / /\ \___/ / / /   \ \ \         / / /\ \_\    / /\/_/ 
+   / /\/________/ / /  \ \ \    / / /   / / / /_/_ \/_/     / / /\ \_\ \ \ \_/        / / /  \/____/\ \ \____\ \ \       / / /_/ / /   / / /    
+  / / /\/_// / / / /___/ /\ \  / / /   / / / /____/\       / / /\ \ \___\ \ \        / / /    / / /  \ \________\ \     / / /__\/ /   / / /     
+ / / /    / / / / /_____/ /\ \/ / /   / / / /\____\/      / / /  \ \ \__/\ \ \      / / /    / / /    \/________/\ \   / / /_____/   / / /      
+/ / /    / / / /_________/\ \ \ \ \__/ / / / /______     / / /____\_\ \   \ \ \    / / /    / / /               \ \ \ / / /\ \ \ ___/ / /__     
+\/_/    / / / / /_       __\ \_\ \___\/ / / /_______\   / / /__________\   \ \_\  / / /    / / /                 \ \_/ / /  \ \ /\__\/_/___\    
+        \/_/\_\___\     /____/_/\/_____/\/__________/   \/_____________/    \/_/  \/_/     \/_/                   \/_\/_/    \_\\/_________/    
+        
+This injection screen was made by N4ri for N4ri's own exploit, Coco Z
+This is not meant to be skidded, as this was made unobfuscated to
+give the least amount of impact when executed.
+]]--
+local CocoInjectionV2 = Instance.new("ScreenGui")
+local InjectionFrame = Instance.new("Frame")
+local I1 = Instance.new("ImageLabel")
+local I2 = Instance.new("ImageLabel")
+local T1 = Instance.new("TextLabel")
+local T2 = Instance.new("TextLabel")
+local T3 = Instance.new("TextButton")
 
-CocoInjection.Name = "CocoInjection"
-CocoInjection.Parent = game.CoreGui
+CocoInjectionV2.Name = "CocoInjectionV2"
+CocoInjectionV2.Parent = game.CoreGui
+CocoInjectionV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CocoInjectionV2.ResetOnSpawn = false
 
-InjectScreen.Name = "InjectScreen"
-InjectScreen.Parent = CocoInjection
-InjectScreen.Active = true
-InjectScreen.AnchorPoint = Vector2.new(0.5, 0.5)
-InjectScreen.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-InjectScreen.BackgroundTransparency = 1.000
-InjectScreen.BorderColor3 = Color3.fromRGB(34, 34, 34)
-InjectScreen.ClipsDescendants = true
-InjectScreen.Position = UDim2.new(0.5, 0, 0.5, 0)
-InjectScreen.Image = "rbxassetid://3570695787"
-InjectScreen.ImageColor3 = Color3.fromRGB(34, 34, 34)
-InjectScreen.ScaleType = Enum.ScaleType.Slice
-InjectScreen.SliceCenter = Rect.new(100, 100, 100, 100)
-InjectScreen.SliceScale = 0.120
+InjectionFrame.Name = "InjectionFrame"
+InjectionFrame.Parent = CocoInjectionV2
+InjectionFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+InjectionFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InjectionFrame.BackgroundTransparency = 1.000
+InjectionFrame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+InjectionFrame.BorderSizePixel = 0
+InjectionFrame.ClipsDescendants = true
+InjectionFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+InjectionFrame.Selectable = true
+InjectionFrame.Size = UDim2.new(0, 248, 0, 153)
 
-Logo.Name = "Logo"
-Logo.Parent = InjectScreen
-Logo.AnchorPoint = Vector2.new(0.5, 0.5)
-Logo.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Logo.BackgroundTransparency = 1.000
-Logo.BorderColor3 = Color3.fromRGB(34, 34, 34)
-Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0.4966667, 0, 0.4966667, 0)
-Logo.Size = UDim2.new(0.686666667, 0, 0.686666667, 0)
-Logo.Image = "http://www.roblox.com/asset/?id=5114898244"
-Logo.ImageTransparency = 1.000
+I1.Name = "I1"
+I1.Parent = InjectionFrame
+I1.AnchorPoint = Vector2.new(0.5, 0.5)
+I1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+I1.BackgroundTransparency = 1.000
+I1.BorderColor3 = Color3.fromRGB(34, 34, 34)
+I1.BorderSizePixel = 0
+I1.Position = UDim2.new(0.5, 0, 0.5, 0)
+I1.Image = "http://www.roblox.com/asset/?id=5651910485"
 
-WebsiteLink.Name = "WebsiteLink"
-WebsiteLink.Parent = InjectScreen
-WebsiteLink.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-WebsiteLink.BackgroundTransparency = 1.000
-WebsiteLink.BorderColor3 = Color3.fromRGB(34, 34, 34)
-WebsiteLink.BorderSizePixel = 0
-WebsiteLink.Position = UDim2.new(-1, 0, 0.640999973, 0)
-WebsiteLink.Size = UDim2.new(1, 0, 0.35944438, 0)
-WebsiteLink.Font = Enum.Font.GothamBold
-WebsiteLink.Text = "https://wearedevs.net/"
-WebsiteLink.TextColor3 = Color3.fromRGB(255, 255, 255)
-WebsiteLink.TextSize = 15.000
-WebsiteLink.TextStrokeColor3 = Color3.fromRGB(34, 34, 34)
-WebsiteLink.TextWrapped = true
+I2.Name = "I2"
+I2.Parent = InjectionFrame
+I2.AnchorPoint = Vector2.new(0.5, 0.5)
+I2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+I2.BackgroundTransparency = 1.000
+I2.BorderColor3 = Color3.fromRGB(34, 34, 34)
+I2.BorderSizePixel = 0
+I2.Position = UDim2.new(0.5, 0, 1.5, 0)
+I2.Size = UDim2.new(0, 115, 0, 115)
+I2.Image = "http://www.roblox.com/asset/?id=5651911343"
 
-InjectionLabel.Name = "InjectionLabel"
-InjectionLabel.Parent = InjectScreen
-InjectionLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-InjectionLabel.BackgroundTransparency = 1.000
-InjectionLabel.BorderColor3 = Color3.fromRGB(34, 34, 34)
-InjectionLabel.BorderSizePixel = 0
-InjectionLabel.Position = UDim2.new(1, 0, 0, 0)
-InjectionLabel.Size = UDim2.new(1, 0, 0.640555501, 0)
-InjectionLabel.Font = Enum.Font.GothamBold
-InjectionLabel.Text = "Coco Z has Injected."
-InjectionLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-InjectionLabel.TextSize = 25.000
-InjectionLabel.TextStrokeColor3 = Color3.fromRGB(34, 34, 34)
-InjectionLabel.TextWrapped = true
+T1.Name = "T1"
+T1.Parent = InjectionFrame
+T1.AnchorPoint = Vector2.new(0.5, 0.5)
+T1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T1.BackgroundTransparency = 1.000
+T1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T1.BorderSizePixel = 0
+T1.Position = UDim2.new(1.22000003, 0, 0.453999996, 0)
+T1.Size = UDim2.new(0, 107, 0, 26)
+T1.Font = Enum.Font.GothamBold
+T1.Text = "Coco Z"
+T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextScaled = true
+T1.TextSize = 14.000
+T1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextWrapped = true
 
-local function XPOIK_fake_script()
-	local script = Instance.new('LocalScript', CocoInjection)
+T2.Name = "T2"
+T2.Parent = InjectionFrame
+T2.AnchorPoint = Vector2.new(0.5, 0.5)
+T2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T2.BackgroundTransparency = 1.000
+T2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T2.BorderSizePixel = 0
+T2.Position = UDim2.new(1.22000003, 0, 0.584999979, 0)
+T2.Size = UDim2.new(0, 107, 0, 14)
+T2.Font = Enum.Font.GothamBold
+T2.Text = "Has Injected"
+T2.TextColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextScaled = true
+T2.TextSize = 14.000
+T2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextWrapped = true
 
-        wait(1)
-	script.Parent.InjectScreen:TweenSize(UDim2.new(0,150,0,150), "Out", "Quad", 0.5, true)
-	wait(0.5)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.9
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.8
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.7
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.6
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.5
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.4
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.3
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.2
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.1
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.0
-	wait(0.5)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.1
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.2
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.3
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.4
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.5
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.6
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.7
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.8
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 0.9
-	wait(0.05)
-	script.Parent.InjectScreen.Logo.ImageTransparency = 1
-	wait(0.2)
-	script.Parent.InjectScreen:TweenSize(UDim2.new(0,293,0,72), "Out", "Quad", 0.5, true)
-	wait(0.5)
-	script.Parent.InjectScreen.InjectionLabel:TweenPosition(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
-	script.Parent.InjectScreen.WebsiteLink:TweenPosition(UDim2.new(0,0,0.641,0), "Out", "Quad", 0.5, true)
+T3.Name = "T3"
+T3.Parent = InjectionFrame
+T3.AnchorPoint = Vector2.new(0.5, 0.5)
+T3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T3.BackgroundTransparency = 1.000
+T3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T3.BorderSizePixel = 0
+T3.Position = UDim2.new(0.5, 0, 1.04999995, 0)
+T3.Size = UDim2.new(0, 107, 0, 10)
+T3.Font = Enum.Font.GothamBold
+T3.Text = "WeAreDevs.net"
+T3.TextColor3 = Color3.fromRGB(255, 255, 255)
+T3.TextScaled = true
+T3.TextSize = 14.000
+T3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T3.TextWrapped = true
+
+local function JCCGM_fake_script()
+	local script = Instance.new('LocalScript', InjectionFrame)
+
+	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
 	wait(1)
-	script.Parent.InjectScreen.InjectionLabel:TweenPosition(UDim2.new(-1,0,0,0), "Out", "Quad", 0.5, true)
-	script.Parent.InjectScreen.WebsiteLink:TweenPosition(UDim2.new(1,0,0.641,0), "Out", "Quad", 0.5, true)
-	wait(0.5)
-	script.Parent.InjectScreen:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,300,0,300), "Out", "Quad", 0.5, true)
+	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,0.95,0), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.I2:TweenPosition(UDim2.new(0.282,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.T1:TweenPosition(UDim2.new(0.727, 0,0.454, 0), "Out", "Quad", 0.5, true)
+	script.Parent.T2:TweenPosition(UDim2.new(0.727, 0,0.585, 0), "Out", "Quad", 0.5, true)
+	wait(1.2)
+	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.T1:TweenPosition(UDim2.new(1.22,0,0.454,0), "Out", "Quad", 0.5, true)
+	script.Parent.T2:TweenPosition(UDim2.new(1.22,0,0.585,0), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,1.05,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.I2:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
 end
-coroutine.wrap(XPOIK_fake_script)()
+coroutine.wrap(JCCGM_fake_script)()
+local function VQDRQTC_fake_script()
+	local script = Instance.new('LocalScript', T3)
+
+	script.Parent.MouseButton1Click:connect(function()
+		setclipboard("https://wearedevs.net")
+	end)
+end
+coroutine.wrap(VQDRQTC_fake_script)()
