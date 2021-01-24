@@ -128,9 +128,8 @@ local function CocoInjectLoad()
 	FadeInText:Play()
 	script.Parent.MainFrame.T1.Text = "wearedevs.net"
 	wait(2)
-	CCInject:Destroy()
 	FadeOutText:Play()
 	wait(0.5)
-	script.Parent.MainFrame.Visible = false
+	CCInject:Destroy()
 end
 coroutine.wrap(CocoInjectLoad)()
