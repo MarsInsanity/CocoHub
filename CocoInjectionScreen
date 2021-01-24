@@ -1,146 +1,136 @@
 --[[
-        _   _        _               _           _               _   _        _            _               _                  _           _     
-       /\_\/\_\ _   / /\            /\ \        /\ \            / /\/\ \     /\_\         /\ \     _   _  /\ \               /\ \        /\ \   
-      / / / / //\_\/ /  \          /  \ \____  /  \ \          / /  \ \ \   / / /        /  \ \   /\_\/\_\\ \ \             /  \ \       \ \ \  
-     /\ \/ \ \/ / / / /\ \        / /\ \_____\/ /\ \ \        / / /\ \ \ \_/ / /        / /\ \ \_/ / / / / \ \ \           / /\ \ \      /\ \_\ 
-    /  \____\__/ / / /\ \ \      / / /\/___  / / /\ \_\      / / /\ \ \ \___/ /        / / /\ \___/ / / /   \ \ \         / / /\ \_\    / /\/_/ 
-   / /\/________/ / /  \ \ \    / / /   / / / /_/_ \/_/     / / /\ \_\ \ \ \_/        / / /  \/____/\ \ \____\ \ \       / / /_/ / /   / / /    
-  / / /\/_// / / / /___/ /\ \  / / /   / / / /____/\       / / /\ \ \___\ \ \        / / /    / / /  \ \________\ \     / / /__\/ /   / / /     
- / / /    / / / / /_____/ /\ \/ / /   / / / /\____\/      / / /  \ \ \__/\ \ \      / / /    / / /    \/________/\ \   / / /_____/   / / /      
-/ / /    / / / /_________/\ \ \ \ \__/ / / / /______     / / /____\_\ \   \ \ \    / / /    / / /               \ \ \ / / /\ \ \ ___/ / /__     
-\/_/    / / / / /_       __\ \_\ \___\/ / / /_______\   / / /__________\   \ \_\  / / /    / / /                 \ \_/ / /  \ \ /\__\/_/___\    
-        \/_/\_\___\     /____/_/\/_____/\/__________/   \/_____________/    \/_/  \/_/     \/_/                   \/_\/_/    \_\\/_________/    
-        
-This injection screen was made by N4ri for N4ri's own exploit, Coco Z
-This is not meant to be skidded, as this was made unobfuscated to
-give the least amount of impact when executed.
+
+        _   _         _                _            _               _    _        _            _                _                   _            _     
+       /\_\/\_\ _    / /\             /\ \         /\ \            / /\ /\ \     /\_\         /\ \     _    _  /\ \                /\ \         /\ \   
+      / / / / //\_\ / /  \           /  \ \____   /  \ \          / /  \\ \ \   / / /        /  \ \   /\_\ /\_\\ \ \              /  \ \        \ \ \  
+     /\ \/ \ \/ / // / /\ \         / /\ \_____\ / /\ \ \        / / /\ \\ \ \_/ / /        / /\ \ \_/ / // / / \ \ \            / /\ \ \       /\ \_\ 
+    /  \____\__/ // / /\ \ \       / / /\/___  // / /\ \_\      / / /\ \ \\ \___/ /        / / /\ \___/ // / /   \ \ \          / / /\ \_\     / /\/_/ 
+   / /\/________// / /  \ \ \     / / /   / / // /_/_ \/_/     / / /\ \_\ \\ \ \_/        / / /  \/____/ \ \ \____\ \ \        / / /_/ / /    / / /    
+  / / /\/_// / // / /___/ /\ \   / / /   / / // /____/\       / / /\ \ \___\\ \ \        / / /    / / /   \ \________\ \      / / /__\/ /    / / /     
+ / / /    / / // / /_____/ /\ \ / / /   / / // /\____\/      / / /  \ \ \__/ \ \ \      / / /    / / /     \/________/\ \    / / /_____/    / / /      
+/ / /    / / // /_________/\ \ \\ \ \__/ / // / /______     / / /____\_\ \    \ \ \    / / /    / / /                \ \ \  / / /\ \ \  ___/ / /__     
+\/_/    / / // / /_       __\ \_\\ \___\/ // / /_______\   / / /__________\    \ \_\  / / /    / / /                  \ \_\/ / /  \ \ \/\__\/_/___\    
+        \/_/ \_\___\     /____/_/ \/_____/ \/__________/   \/_____________/     \/_/  \/_/     \/_/                    \/_/\/_/    \_\/\/_________/    
+
+
+This Injection Screen is made by N4ri for his own exploit, Coco Z.
+Please do not rename this and call this your own, this is unobfuscated
+to give the least amount of impact to Coco Z. This is not meant for
+anyone else.
+
+- <3 N4ri
+
+
 ]]--
-local CocoInjectionV2 = Instance.new("ScreenGui")
-local InjectionFrame = Instance.new("Frame")
-local I1 = Instance.new("ImageLabel")
-local I2 = Instance.new("ImageLabel")
-local T1 = Instance.new("TextLabel")
+
+local CCInject = Instance.new("ScreenGui")
+local MainFrame = Instance.new("ImageLabel")
+local CocoLogo = Instance.new("ImageLabel")
 local T2 = Instance.new("TextLabel")
-local T3 = Instance.new("TextButton")
+local T1 = Instance.new("TextLabel")
 
-CocoInjectionV2.Name = "CocoInjectionV2"
-CocoInjectionV2.Parent = game.CoreGui
-CocoInjectionV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-CocoInjectionV2.ResetOnSpawn = false
+CCInject.Name = "CCInject"
+CCInject.Parent = game.CoreGui
+CCInject.ResetOnSpawn = false
 
-InjectionFrame.Name = "InjectionFrame"
-InjectionFrame.Parent = CocoInjectionV2
-InjectionFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-InjectionFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-InjectionFrame.BackgroundTransparency = 1.000
-InjectionFrame.BorderColor3 = Color3.fromRGB(30, 30, 30)
-InjectionFrame.BorderSizePixel = 0
-InjectionFrame.ClipsDescendants = true
-InjectionFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-InjectionFrame.Selectable = true
-InjectionFrame.Size = UDim2.new(0, 248, 0, 153)
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = CCInject
+MainFrame.AnchorPoint = Vector2.new(0.5, 0)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Image = "rbxassetid://3570695787"
+MainFrame.ImageColor3 = Color3.fromRGB(30, 30, 30)
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
 
-I1.Name = "I1"
-I1.Parent = InjectionFrame
-I1.AnchorPoint = Vector2.new(0.5, 0.5)
-I1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-I1.BackgroundTransparency = 1.000
-I1.BorderColor3 = Color3.fromRGB(34, 34, 34)
-I1.BorderSizePixel = 0
-I1.Position = UDim2.new(0.5, 0, 0.5, 0)
-I1.Image = "http://www.roblox.com/asset/?id=5651910485"
-
-I2.Name = "I2"
-I2.Parent = InjectionFrame
-I2.AnchorPoint = Vector2.new(0.5, 0.5)
-I2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-I2.BackgroundTransparency = 1.000
-I2.BorderColor3 = Color3.fromRGB(34, 34, 34)
-I2.BorderSizePixel = 0
-I2.Position = UDim2.new(0.5, 0, 1.5, 0)
-I2.Size = UDim2.new(0, 115, 0, 115)
-I2.Image = "http://www.roblox.com/asset/?id=5651911343"
-
-T1.Name = "T1"
-T1.Parent = InjectionFrame
-T1.AnchorPoint = Vector2.new(0.5, 0.5)
-T1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-T1.BackgroundTransparency = 1.000
-T1.BorderColor3 = Color3.fromRGB(30, 30, 30)
-T1.BorderSizePixel = 0
-T1.Position = UDim2.new(1.22000003, 0, 0.453999996, 0)
-T1.Size = UDim2.new(0, 107, 0, 26)
-T1.Font = Enum.Font.GothamBold
-T1.Text = "Coco Z"
-T1.TextColor3 = Color3.fromRGB(255, 255, 255)
-T1.TextScaled = true
-T1.TextSize = 14.000
-T1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-T1.TextWrapped = true
+CocoLogo.Name = "CocoLogo"
+CocoLogo.Parent = MainFrame
+CocoLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+CocoLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CocoLogo.BackgroundTransparency = 1.000
+CocoLogo.BorderSizePixel = 0
+CocoLogo.ClipsDescendants = true
+CocoLogo.Position = UDim2.new(0.5, 0, 1.5, 0)
+CocoLogo.Size = UDim2.new(0, 90, 0, 90)
+CocoLogo.Image = "http://www.roblox.com/asset/?id=6290482056"
+CocoLogo.ImageTransparency = 1.000
 
 T2.Name = "T2"
-T2.Parent = InjectionFrame
-T2.AnchorPoint = Vector2.new(0.5, 0.5)
-T2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T2.Parent = MainFrame
+T2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 T2.BackgroundTransparency = 1.000
-T2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 T2.BorderSizePixel = 0
-T2.Position = UDim2.new(1.22000003, 0, 0.584999979, 0)
-T2.Size = UDim2.new(0, 107, 0, 14)
+T2.Position = UDim2.new(1.51400006, 0, 0.456, 0)
+T2.Size = UDim2.new(0, 81, 0, 23)
 T2.Font = Enum.Font.GothamBold
-T2.Text = "Has Injected"
+T2.Text = "Coco Z"
 T2.TextColor3 = Color3.fromRGB(255, 255, 255)
-T2.TextScaled = true
-T2.TextSize = 14.000
-T2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-T2.TextWrapped = true
+T2.TextSize = 25.000
 
-T3.Name = "T3"
-T3.Parent = InjectionFrame
-T3.AnchorPoint = Vector2.new(0.5, 0.5)
-T3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-T3.BackgroundTransparency = 1.000
-T3.BorderColor3 = Color3.fromRGB(30, 30, 30)
-T3.BorderSizePixel = 0
-T3.Position = UDim2.new(0.5, 0, 1.04999995, 0)
-T3.Size = UDim2.new(0, 107, 0, 10)
-T3.Font = Enum.Font.GothamBold
-T3.Text = "WeAreDevs.net"
-T3.TextColor3 = Color3.fromRGB(255, 255, 255)
-T3.TextScaled = true
-T3.TextSize = 14.000
-T3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-T3.TextWrapped = true
+T1.Name = "T1"
+T1.Parent = MainFrame
+T1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T1.BackgroundTransparency = 1.000
+T1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+T1.BorderSizePixel = 0
+T1.Position = UDim2.new(1.51400006, 0, 0.372999996, 0)
+T1.Size = UDim2.new(0, 81, 0, 13)
+T1.Font = Enum.Font.Gotham
+T1.Text = "Welcome to"
+T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextSize = 12.000
 
-local function JCCGM_fake_script()
-	local script = Instance.new('LocalScript', InjectionFrame)
+local function CocoInjectLoad()
+	local script = Instance.new('LocalScript', CCInject)
 
-	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
-	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
+	local TweenService = game:GetService("TweenService")
+	local time = 0.5 
+	local RoundOut = TweenService:Create(script.Parent.MainFrame, TweenInfo.new(time), {SliceScale = 0.05})
+	local RoundOutMore = TweenService:Create(script.Parent.MainFrame, TweenInfo.new(time), {SliceScale = 0})
+	local FadeMain = TweenService:Create(script.Parent.MainFrame, TweenInfo.new(time), {ImageTransparency = 1})
+	local FadeOutLogo = TweenService:Create(script.Parent.MainFrame.CocoLogo, TweenInfo.new(time), {ImageTransparency = 0})
+	local FadeInText = TweenService:Create(script.Parent.MainFrame.T1, TweenInfo.new(time), {TextTransparency = 0})
+	local FadeOutText = TweenService:Create(script.Parent.MainFrame.T1, TweenInfo.new(time), {TextTransparency = 1})
+	
+	wait(5)
+	script.Parent.MainFrame:TweenPosition(UDim2.new(0.5,0,0.5,-57), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
+	wait(0.5)
+	FadeOutLogo:Play()
+	script.Parent.MainFrame.CocoLogo:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
 	wait(1)
-	script.Parent.I1:TweenSize(UDim2.new(0,300,0,300), "Out", "Quad", 0.5, true)
-	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,0.95,0), "Out", "Quad", 0.5, true)
-	wait(1)
-	script.Parent.I2:TweenPosition(UDim2.new(0.282,0,0.5,0), "Out", "Quad", 0.5, true)
-	script.Parent.T1:TweenPosition(UDim2.new(0.727, 0,0.454, 0), "Out", "Quad", 0.5, true)
-	script.Parent.T2:TweenPosition(UDim2.new(0.727, 0,0.585, 0), "Out", "Quad", 0.5, true)
-	wait(1.2)
-	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
-	script.Parent.T1:TweenPosition(UDim2.new(1.22,0,0.454,0), "Out", "Quad", 0.5, true)
-	script.Parent.T2:TweenPosition(UDim2.new(1.22,0,0.585,0), "Out", "Quad", 0.5, true)
-	wait(1)
-	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,1.05,0), "Out", "Quad", 0.5, true)
-	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
-	wait(1)
-	script.Parent.I2:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
-	script.Parent.I1:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+	RoundOut:Play()
+	script.Parent.MainFrame:TweenSize(UDim2.new(0,240,0,144), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame:TweenPosition(UDim2.new(0.5,0,0.5,-72), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.CocoLogo:TweenPosition(UDim2.new(0.328,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T1:TweenPosition(UDim2.new(0.514,0,0.373,0), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T2:TweenPosition(UDim2.new(0.514,0,0.456,0), "Out", "Quad", 0.5, true)
+	wait(2)
+	script.Parent.MainFrame:TweenSize(UDim2.new(0.5,0,0,40), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame:TweenPosition(UDim2.new(0.5,0,0,-40), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.CocoLogo:TweenPosition(UDim2.new(-1.328,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T2:TweenPosition(UDim2.new(0.514,0,-1.456,0), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T2:TweenPosition(UDim2.new(0.514,0,-1.456,0), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T1:TweenSize(UDim2.new(1,0,0,12), "Out", "Quad", 0.5, true)
+	script.Parent.MainFrame.T1:TweenPosition(UDim2.new(0,0,0.5,-6), "Out", "Quad", 0.5, true)
+	RoundOutMore:Play()
+	FadeMain:Play()
+	FadeOutText:Play()
+	wait(0.5)
+	FadeInText:Play()
+	script.Parent.MainFrame.T1.Text = "Welcome to Coco Z by N4ri x MC."
+	wait(2)
+	FadeOutText:Play()
+	wait(0.5)
+	FadeInText:Play()
+	script.Parent.MainFrame.T1.Text = "wearedevs.net"
+	wait(2)
+	FadeOutText:Play()
+	wait(0.5)
+	script.Parent.MainFrame.Visible = false
 end
-coroutine.wrap(JCCGM_fake_script)()
-local function VQDRQTC_fake_script()
-	local script = Instance.new('LocalScript', T3)
-
-	script.Parent.MouseButton1Click:connect(function()
-		setclipboard("https://wearedevs.net")
-	end)
-end
-coroutine.wrap(VQDRQTC_fake_script)()
+coroutine.wrap(CocoInjectLoad)()
