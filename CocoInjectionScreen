@@ -96,6 +96,7 @@ local function CocoInjectLoad()
 	local FadeInText = TweenService:Create(script.Parent.MainFrame.T1, TweenInfo.new(time), {TextTransparency = 0})
 	local FadeOutText = TweenService:Create(script.Parent.MainFrame.T1, TweenInfo.new(time), {TextTransparency = 1})
 	
+	wait(5)
 	script.Parent.MainFrame:TweenPosition(UDim2.new(0.5,0,0.5,-57), "Out", "Quad", 0.5, true)
 	script.Parent.MainFrame:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
 	wait(0.5)
