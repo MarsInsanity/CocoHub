@@ -449,4 +449,4 @@ end
 	end
 	return ButtonSys
 end
-return lib
+local main = lib:CreateWindow()
