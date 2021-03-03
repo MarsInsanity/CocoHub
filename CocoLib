@@ -49,7 +49,7 @@ local CocoLogo = Instance.new("ImageLabel")
 local MinimizeBTN = Instance.new("ImageButton")
 
 CCUILib.Name = "CCUILib"
-CCUILib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CCUILib.Parent = game.CoreGui
 CCUILib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
