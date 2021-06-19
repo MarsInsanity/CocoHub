@@ -20,9 +20,6 @@ anyone else.
 
 - <3 N4ri
 
-
-]]--
-
 local CCInject = Instance.new("ScreenGui")
 local MainFrame = Instance.new("ImageLabel")
 local CocoLogo = Instance.new("ImageLabel")
@@ -134,3 +131,6 @@ local function CocoInjectLoad()
 	CCInject:Destroy()
 end
 coroutine.wrap(CocoInjectLoad)()
+
+]]--
+
